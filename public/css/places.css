@@ -1,0 +1,11 @@
+body {
+  background-color: silver;
+}
+
+.cust-list{
+  background-color: white;
+}
+
+button {
+  border-radius: 5px;
+}

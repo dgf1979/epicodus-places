@@ -1,13 +1,13 @@
-<p>Here are the places you've been:</p>
+<h3>Here are the places you've been:</h3>
 
 <%= @html_list %>
-  <!--<%= @places %>-->
 
 <form action="/" method="post">
-  <label for="location">List of Locations</label>
+  <div class="form-group">
+    <label for="location"></label>
 
-  <input id="location" name="location" type="text">
+    <input id="location" name="location" type="text" class="form-control">
 
-  <button type="submit">Add Location</button>
-
+    <button type="submit">Add Location</button>
+  </div>
 </form>

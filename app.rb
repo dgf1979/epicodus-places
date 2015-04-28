@@ -20,7 +20,7 @@ post('/') do
     @html_list += "<li>#{place.location()}</li>"
   end
   @html_list += "</ul>"
-# binding.pry
+  params.clear()
   erb(:index)
 end
 
