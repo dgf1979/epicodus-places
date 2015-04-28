@@ -17,4 +17,8 @@ class Places
   define_singleton_method(:all) do
     @@all_locations
   end
+
+  define_singleton_method(:clear) do
+
+  end
 end

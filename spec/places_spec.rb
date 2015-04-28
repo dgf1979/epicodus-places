@@ -16,4 +16,14 @@ describe(Places) do
       expect(Places.all()).to(eq([new_place]))
     end
   end
+
+  describe('.clear') do
+    it('clear the locations list') do
+      new_place = Places.new("Glasgow, Scotland")
+      new_place.save_location()
+      Places.clear()
+      expect(Places.all()).to(eq([]))
+    end
+  end
+
 end
