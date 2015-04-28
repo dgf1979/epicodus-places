@@ -4,9 +4,9 @@ This application is meant to fulfill the requirements of an assignment through E
 
 ### Description ###
 
-Places You've Been
+**Assignment:** Places You've Been
 
-**Assignment:** To Do
+A simple list of places
 
 **<https://www.learnhowtoprogram.com/table-of-contents>**
 

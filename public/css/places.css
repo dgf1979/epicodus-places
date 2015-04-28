@@ -1,9 +1,12 @@
 body {
-  background-color: silver;
+  background: silver;
 }
 
 .cust-list{
-  background-color: white;
+  background: white;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 5px;
 }
 
 button {
