@@ -10,7 +10,7 @@ class Places
     @location_name
   end
 
-  define_method(:save_location) do
+  define_method(:save) do
     @@all_locations.push(self)
   end
 

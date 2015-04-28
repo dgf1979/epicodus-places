@@ -15,4 +15,17 @@ describe('the places path', {:type => :feature}) do
     click_button("Add Location")
     expect(page).to have_content('Paris, France')
   end
+
+  it('verifies all locations entered into form are returned on page', {:type => :feature}) do
+    visit('/')
+    fill_in("location", :with => "Paris, France")
+    click_button("Add Location")
+
+    fill_in("location", :with => "London, England")
+    click_button("Add Location")
+
+    expect(page).to have_content('Paris, France')
+    expect(page).to have_content('London, England')
+  end
+
 end
