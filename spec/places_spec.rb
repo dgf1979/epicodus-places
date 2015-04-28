@@ -5,7 +5,7 @@ describe(Places) do
   before() do
     Places.clear()
   end
-  
+
   describe('#location') do
     it("set the name of a location") do
       new_place = Places.new("Los Angeles")
@@ -18,6 +18,11 @@ describe(Places) do
       new_place = Places.new("Glasgow, Scotland")
       new_place.save()
       expect(Places.all()).to(eq([new_place]))
+    end
+    it('will not save a blank string to the list of places') do
+      new_place = Places.new("")
+      new_place.save()
+      expect(Places.all()).to(eq([]))
     end
   end
 

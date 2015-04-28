@@ -11,7 +11,9 @@ class Places
   end
 
   define_method(:save) do
-    @@all_locations.push(self)
+    if self.location != ""
+      @@all_locations.push(self)
+    end
   end
 
   define_singleton_method(:all) do

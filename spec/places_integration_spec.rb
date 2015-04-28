@@ -1,3 +1,4 @@
+require('pry')
 require('capybara/rspec')
 require('./app')
 Capybara.app = Sinatra::Application
@@ -23,9 +24,12 @@ describe('the places path', {:type => :feature}) do
 
     fill_in("location", :with => "London, England")
     click_button("Add Location")
-
     expect(page).to have_content('Paris, France')
     expect(page).to have_content('London, England')
   end
+
+  # it('verifies that the user has not submitted a blank entry') do
+  #
+  # end
 
 end
