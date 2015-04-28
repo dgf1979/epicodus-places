@@ -19,6 +19,6 @@ class Places
   end
 
   define_singleton_method(:clear) do
-
+    @@all_locations = []
   end
 end
